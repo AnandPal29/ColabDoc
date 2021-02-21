@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Collaborative Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <h1>Collaborative Editor</h1>
+        <div class="container">
+            <a id="downloadBtn" onclick="downloadFunc()" download="file.txt" class="downloadBtn">Download Txt</a>
+            <a id="downloadBtn" onclick="Export2Word('textbox', '')"  class="downloadBtn">Download Word</a>
+        </div>
+        
+        <textarea name="" id="textbox" cols="200" rows="44" onkeyup="charUpdate(this)"></textarea>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/my.js"></script>
+    </body>
+</html>
